@@ -1,0 +1,130 @@
+% Začetek preambule
+\documentclass[a4paper, 12pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{graphicx}
+
+
+% Moji ukazi, okolja,...
+% oznake za števila
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+% opombe
+\newenvironment{opomba}{\begin{flushleft} \textbf{Opomba}:}{\hfill \end{flushleft}}
+% definicije
+\newcounter{definitionCounter}
+\addtocounter{definitionCounter}{1}
+\newenvironment{definicija}{\begin{flushleft} \textit{\textbf{Definicija \arabic{definitionCounter}}}:}{\hfill \end{flushleft}\stepcounter{definitionCounter}}
+% pojmi
+\newcommand{\pojem}[1]{\textsc{#1}}
+% dokazi
+\newenvironment {dokaz}{\begin{flushleft} \textit{\textbf{Dokaz}}:}{\hfill $\square$\end{flushleft}}
+% izreki
+\newcounter{theoremCounter}
+\addtocounter{theoremCounter}{1}
+\newcounter{theoremCorollaryCounter}
+\addtocounter{theoremCorollaryCounter}{0}
+\newenvironment {izrek}{\begin{flushleft} \textsf{\textbf{IZREK \arabic{theoremCounter}}}:}{\hfill \end{flushleft}\stepcounter{theoremCounter}\stepcounter{theoremCorollaryCounter}\setcounter{corollaryCounter}{1}}
+% leme
+\newcounter{lemmaCounter}
+\addtocounter{lemmaCounter}{1}
+\newenvironment{lema}{\begin{flushleft} \textbf{Lema \arabic{lemmaCounter}}:}{\hfill \end{flushleft}\stepcounter{lemmaCounter}}
+% posledice
+\newcounter{corollaryCounter}
+\addtocounter{corollaryCounter}{1}
+\newenvironment  {posledica}{\begin{flushleft} \textsf{\textbf{Posledica \arabic{theoremCorollaryCounter}.\arabic{corollaryCounter}}}:}{\hfill \end{flushleft}\stepcounter{corollaryCounter}}
+% dodatni ukazi
+\usepackage{hyperref} % mora biti zadnji
+
+% začetek dokumenta
+\begin{document}
+\thispagestyle{empty}
+\noindent{\large
+UNIVERZA V LJUBLJANI\\[1mm]
+FAKULTETA ZA MATEMATIKO IN FIZIKO\\[5mm]
+MATEMATIKA -- 2.~stopnja}
+\vfill
+
+\begin{center}{\large 
+Klemen Pavlič\\[2mm]
+{\bf Urejenostne algebrske strukture}\\[10mm]
+Domača naloga}
+\end{center}
+\vfill
+
+\noindent{\large
+Velika Lašna, 2013}
+\pagebreak
+\newpage 
+
+\begin{flushleft}
+1. naloga
+\end{flushleft}
+Naj bo $G=\Z\times \Z$ z operacijo $(a,b)\circ (c,d) = (a+(-1)^b c, b+d)$.
+\begin{enumerate}
+\item[(a)] Dokažimo, da je $G$ grupa in da nima nobene linearne  ureditve.
+\item[(b)] Dokažimo, da $G$ nima nobene mrežne ureditve.
+\item[(c)] Konstruiraj na $G$ kako usmerjeno delno ureditev.
+\end{enumerate}
+\emph{Rešitev}
+\begin{enumerate}
+\item[(a)] Preverimo najprej, da je grupa. Jasno je, da je množica $\Z \times \Z$ zaprta za $\circ$. Preverimo asociativnost.
+$$
+\big[(a,b)\circ (c,d)\big] \circ (e,f) = (a+(-1)^b c, b+d) \circ (e,f) =
+$$
+$$
+(a+(-1)^b c+ (-1)^{b+d}e, b+d+f),
+$$
+$$
+(a,b)\circ \big[ (c,d) \circ (e,f) \big] = (a,b) \circ (c+(-1)^d e, d+f) =
+$$
+$$
+(a+(-1)^b (c+(-1)^de), b+(d+f)) = (a+ (-1)^b c + (-1)^{b+d} e, b+d+f).
+$$
+Element $(0,0)$ je enota. Res, velja namreč
+$$
+(a,b)\circ (0,0) = (a+(-1)^b 0, b+0) = (a,b),
+$$
+$$
+(0,0) \circ (a,b) = (0+(-1)^0 a, 0+b) = (a,b). 
+$$
+Inverz elementa $(a,b)$ je element $(a(-1)^{1-b},-b)$. Res, velja namreč
+$$
+(a,b) \circ (a(-1)^{1-b},-b) = (a+(-1)^b a (-1)^{1-b}, b-b) = (a-a,0 )= (0,0),
+$$
+$$
+(a(-1)^{1-b}, -b) \circ (a,b) = (a(-1)^{1-b}+(-1)^{-b}a,-b+b)=
+$$
+$$
+(a(-1)^{-b}(-1+1),0 ) = (0,0).
+$$
+Sledi, da je $(G,\circ)$ res grupa.
+\item[(b)] 
+\item[(c)] 
+\end{enumerate}
+
+\begin{flushleft}
+2. naloga
+\end{flushleft}
+
+\begin{flushleft}
+3. naloga
+\end{flushleft}
+
+\begin{flushleft}
+4. naloga
+\end{flushleft}
+
+\begin{flushleft}
+5. naloga
+\end{flushleft}
+
+
+\end{document}

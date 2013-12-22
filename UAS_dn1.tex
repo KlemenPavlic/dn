@@ -107,7 +107,11 @@ $$
 $$
 Sledi, da je $(G,\circ)$ res grupa.
 
-Pokažimo še, da $G$ nima nobene linearne ureditve. Denimo nasprotno, da na $G$ obstaja linearna ureditev. 
+Pokažimo še, da $G$ nima nobene linearne ureditve. Denimo nasprotno, da na $G$ obstaja linearna ureditev. Potem za pozitiven stožec $P$ te ureditve velja $P\cup P^{-1} = G$. Preprost račun nam pokaže, da velja
+$$
+(e,f) \circ (a,b) \circ (e,f)^{-1} = (e+(-1)^f a + (-1)^{1+b} e,b).
+$$
+Vzemimo sedaj poljuben element oblike $(a,0), a\neq 0$. Njegov inverz je $(-a,0)$. Po drugi strani pa iz zgornje formule sledi, da je $(0,1)\circ(a,0)\circ (0,1)^{-1} = (-a,0)$. Vemo, da je bodisi $(a,0) \in P$ bodisi $(-a,0)\in P$. Predpostavimo lahko, da je $(a,0) \in P$, sicer ga zamenjamo z inverzom.  To pa pomeni, da je element $(-a,0) \in P\cap P^{-1} = \{e\} = \{(0,0)\}$. Sledi, da je $a=0$. Protislovje.
 
 \item[(b)] 
 

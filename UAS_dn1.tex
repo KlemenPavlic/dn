@@ -106,25 +106,106 @@ $$
 (a(-1)^{-b}(-1+1),0 ) = (0,0).
 $$
 Sledi, da je $(G,\circ)$ res grupa.
+
+Pokažimo še, da $G$ nima nobene linearne ureditve. Denimo nasprotno, da na $G$ obstaja linearna ureditev. 
+
 \item[(b)] 
-\item[(c)] 
+
+\item[(c)] Definirajmo pozitiven stožec $P_{\ge} = \{(a,b); b > 0, a \text{ poljuben}\} \cup \{(0,0)\}$. Preverimo najprej, da je to res pozitiven stožec. Najprej preverimo, da velja $P_{\ge} \circ P_{\ge} \subseteq P_{ \ge}$. Naj bosta $(a,b), (c,d) \in P_{\ge}$. Če sta $b,d > 0$, potem je druga komponenta $(a,b)\circ (c,d)$ enaka $b+d > 0$ in je $(a,b)\circ (c,d) \in P_{\ge}$. Če je $d=0$, mora biti tudi $c=0$. Ker je $(0,0)$ enota, je $(a,b)\circ (0,0) = (a,b)$ in ima drugo komponento pozitivno, torej je v pozitivnem stožcu $P_{\ge}$. Enako velja za primer, ko $b=0$ in $d>0$. Če pa sta $b=d=0$, mora biti še $a=c=0$ in je $(a,b)\circ(c,d) = (0,0) \in P_{\ge}$. Sledi $P_{\ge} \circ P_{\ge} \subseteq P_{\ge}$.
+
+Pokažimo, da je $P_{\ge} \cap P_{\ge} = \{(0,0)\}$. Naj bo element $(a,b)$ v preseku. Potem mora veljati $(a,b) \ge 0$ in $(a,b)^{-1}=(a(-1)^{1-b},-b)\ge 0$. To je res natanko tedaj, ko je bodisi $b>0$ in $-b>0$ bodisi $a=b=0$ in $a(-1)^{1-b}=-b=0$. V prvem primeru pridemo do protislovja, torej mora veljati drugi primer, to pa pomeni, da je $a=b=0$ in da je v preseku res le enota.
+
+Naj bo zdaj še $(c,d)\in G$ poljuben element in $(a,b)\in P_{\ge}$ poljuben element. Preverimo, da je $(c,d)\circ (a,b) \circ (c,d)^{-1} \in P_{\ge}$. Velja
+$$
+(c,d)\circ (a,b) \circ (c,d)^{-1} = (c,d) \circ (a,b) \circ (c(-1)^{1-d},-d) =
+$$
+$$
+(c+(-1)^d a ,d+b) \circ (c(-1)^{1-d},-d)=
+$$
+$$
+(c+(-1)^d a +(-1)^{b+d}c(-1)^{1-d},d+b-d)=
+$$
+$$
+(c+(-1)^d a + (-1)^{1+b}c,b).
+$$
+Če je $b>0$ , potem je ta element iz $P_{\ge}$. Če pa je $b=0$, je tudi $a=0$ in zgornje naprej poenostavimo v $(c+(-1)^d a + (-1)^{1+b}c,b) = (c+(-1)c,0)=(0,0) \in P_{\ge}$. Sklenemo, da je $P_{\ge}$ res pozitiven stožec.
+
+Pokažimo sedaj, da je $G$ v tej ureditvi usmerjena. Naj bosta torej $(a,b), (c,d)\in G$ poljubna elementa. Poiskati moramo njuno spodnjo in zgornjo mejo. Trdim, da je element $(0,\max\{b,d\} + 1)$ zgornja meja. Preverimo, da je $(a,b)\le (0,\max\{b,d\} + 1)$. To bo res natanko tedaj, ko bo $(0,\max\{b,d\} + 1)\circ (a,b)^{-1} = (0,\max\{b,d\} +1)\circ (a(-1)^{1-b},-b)=((-1)^{\max\{b,d\}+1} a (-1)^{1-b},\max\{b,d\} - b +1 ) \in P_{\ge}$. To pa velja, ker je druga komponenta $\max\{b,d\} - b +1 \ge 1 > 0$. Podobno vidimo, da je zgornji element tudi zgornja meja za $(c,d)$.
+
+Trdim, da je element $(0,\min\{b,d\} - 1)$ spodnja meja za $(a,b)$ in $(c,d)$. Preverimo, da je $(0,\min\{b,d\} - 1) \le (a,b)$. Podoben račun kot zgoraj pokaže, da je to res natanko tedaj, ko je $(a,b)\circ (0,\min\{b,d\} -1)^{-1} = (a,b+1-\min\{b,d\}) \in P_{\ge}$. To pa spet velja, ker je druga komponenta $b+1-\min\{b,d\} \ge 1 > 0$. Enako se pokaže še $(0,\min\{b,d\} - 1) \le  (c,d)$. Sledi, da je $G$ usmerjena.
 \end{enumerate}
 
 \begin{flushleft}
 2. naloga
 \end{flushleft}
+\emph{Rešitev}
 
 \begin{flushleft}
 3. naloga
 \end{flushleft}
+\emph{Rešitev}
 
 \begin{flushleft}
 4. naloga
 \end{flushleft}
+\emph{Rešitev}
 
 \begin{flushleft}
 5. naloga
 \end{flushleft}
+Naj bo $G$ aditivna  grupa vseh celoštevilskih $2\times 2$ matrik z delno urejenostjo
+$$
+\begin{bmatrix}
+a_1 & b_1 \\
+c_1 & d_1 \\
+\end{bmatrix}
+\le 
+\begin{bmatrix}
+a_2 & b_2 \\
+c_2 & d_2 \\
+\end{bmatrix}
+\Leftrightarrow
+\begin{array}{l}
+a_1 < a_2 \text{ ali}\\
+a_1 = a_2 \text{ in } b_1 < b_2 \text{ ali}\\
+a_1 = a_2 \text{ in } b_1 = b_2 \text{ in } c_1 \le c_2 \text{ in } d_1 \le d_2\\
+\end{array}.
+$$
+\begin{enumerate}
+\item[(a)] Dokaži, da je $G$ mrežno urejena.
+\item[(b)] Izračunaj vrednosti koordinatnih matrik $E_{ij}$.
+\item[(c)] Dokaži, da smo v (b) dobili vse prapodgrupe  v $G$.
+\item[(d)] Opiši Hahnovo vložitev za grupo $G$.
+\end{enumerate}
+\emph{Rešitev}
+\begin{enumerate}
+\item[(a)]Trdim, da je množica
+$$
+P=\big\{
+\begin{bmatrix}
+a_1 & b_1 \\
+c_1 & d_1 \\
+\end{bmatrix}
+;
+\begin{array}{l}
+a_1 >0 \text{ ali}\\
+a_1 = 0 \text{ in } b_1 > 0 \text{ ali}\\
+a_1 = 0 \text{ in } b_1 = 0 \text{ in } c_1 \ge 0 \text{ in } d_1 \ge 0\\
+\end{array}
+\big\}
+$$
+pozitiven stožec. Če ločimo nekaj primerov, z lahkoto pokažemo, da je $P+P \subseteq P$. Pokažimo še, da je $P\cap -P = \{0\}$. Če je 
+$\begin{bmatrix}
+a_1 & b_1 \\
+c_1 & d_1\\
+\end{bmatrix}
+$
+iz $P\cap -P$, potem mora veljati $a_1 > 0$ ali $(a_1 = 0 \text{ in } b_1 > 0)$ ali $(a_1=0 \text{ in } b_1 = 0 \text{ in } c_1 \ge 0 \text{ in } d_1 \ge 0)$ in hkrati še  $-a_1 > 0$ ali $(-a_1 = 0 \text{ in } -b_1 > 0)$ ali $(-a_1=0 \text{ in } -b_1 = 0 \text{ in } -c_1 \ge 0 \text{ in } -d_1 \ge 0)$. Sledi, da mora veljati $a_1 =b_1 =0$ in $0\le c_1 \le 0, 0 \le d_1 \le 0$, torej še $c_1 = d_1 = 0$. Sledi, da je v preseku res samo enota in ker je ta grupa komutativna, je ta množica res pozitiven stožec. 
+Pokažimo še, da je mreža v tej urejenosti.
 
+\item[(b)] 
+\item[(c)]
+\item[(d)]
+\end{enumerate}
 
 \end{document}

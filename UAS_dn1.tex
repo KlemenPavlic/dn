@@ -201,8 +201,38 @@ c_1 & d_1\\
 \end{bmatrix}
 $
 iz $P\cap -P$, potem mora veljati $a_1 > 0$ ali $(a_1 = 0 \text{ in } b_1 > 0)$ ali $(a_1=0 \text{ in } b_1 = 0 \text{ in } c_1 \ge 0 \text{ in } d_1 \ge 0)$ in hkrati še  $-a_1 > 0$ ali $(-a_1 = 0 \text{ in } -b_1 > 0)$ ali $(-a_1=0 \text{ in } -b_1 = 0 \text{ in } -c_1 \ge 0 \text{ in } -d_1 \ge 0)$. Sledi, da mora veljati $a_1 =b_1 =0$ in $0\le c_1 \le 0, 0 \le d_1 \le 0$, torej še $c_1 = d_1 = 0$. Sledi, da je v preseku res samo enota in ker je ta grupa komutativna, je ta množica res pozitiven stožec. 
-Pokažimo še, da je mreža v tej urejenosti.
-
+Pokažimo še, da je mreža v tej urejenosti. Naj bosta 
+$
+A=
+\begin{bmatrix}
+a_1 & b_1 \\
+c_1 & d_1 \\
+\end{bmatrix}
+$
+in
+$
+B = 
+\begin{bmatrix}
+a_2 & b_2 \\
+c_2 & d_2 \\
+\end{bmatrix}
+$
+poljubni matriki. Poiščimo njun supremum. Če je $a_1 > a_2 $, potem je $A \lor B = A$ in podobno  je v primeru  $a_1 < a_2$ $A\lor B = B$. Naj bo torej zdaj $a_1 = a_2$. Če je še $ b_1 < b_2 $ je $A\lor B = B$, če pa je $b_1 > b_2$, pa je $A \lor B = A$. Opazujmo zdaj primer, ko je $a_1 = a_2 $ in $b_1 = b_2$. Ločimo še nekaj primerov. Če je 
+\begin{itemize}
+\item $c_1 \ge c_2 $ in $d_1\ge d_2$ je $A\lor B = A$,
+\item $c_1 \le c_2$ in $d_1 \le d_2$ je $A\lor B = B$,
+\item $c_1 \ge c_2$ in $d_2 \ge d_1$ je  $A\lor B=
+\begin{bmatrix}
+a_1 & b_1\\
+c_1 & d_2 \\
+\end{bmatrix}$,
+\item $c_2 \ge c_1$ in $d_1 \ge d_2$ je  $A\lor B=
+\begin{bmatrix}
+a_1 & b_1\\
+c_2 & d_1 \\
+\end{bmatrix}$.
+\end{itemize}
+Vsi ti elementi so res pravi supremumi. Podobno poiščemo še infimume. Sledi, da je $G$ v dani urejenosti res mreža.
 \item[(b)] 
 \item[(c)]
 \item[(d)]

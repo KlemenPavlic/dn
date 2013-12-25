@@ -246,7 +246,68 @@ c_2 & d_1 \\
 \end{bmatrix}$.
 \end{itemize}
 Vsi ti elementi so res pravi supremumi. Podobno poiščemo še infimume. Sledi, da je $G$ v dani urejenosti res mreža.
-\item[(b)] 
+\item[(b)] Določimo sedaj vrednosti koordinatnih matrik $E_{ij}$. Vemo, da je vrednost maksimalna strnjena podgrupa, ki še ne vsebuje danega elementa. Začnimo z elementom $E_{11}$. Trdim, da je 
+$$
+V_{E_{11}} = 	\big\{ 
+\begin{bmatrix}
+0 & b_1 \\
+c_1 & d_1 \\
+\end{bmatrix}; b_1,c_1,d_1 \in \Z
+  \big\}.
+$$
+Očitno je $V_{E_{11}}$ podgrupa in $E_{11}\notin V_{E_{11}}$. Preverimo, da je $V_{E_{11}}$ strnjena. Denimo, da za matriki 
+$B=\begin{bmatrix}
+a_2 & b_2\\
+c_2 & d_2\\
+\end{bmatrix}
+\in G
+$
+in
+$
+A=\begin{bmatrix}
+0 & b_1\\
+c_1 & d_1\\
+\end{bmatrix}
+\in V_{E_{11}}
+$
+velja $|B| \le |A|$. To je ekvivalentno temu, da je $|a_2| < 0 $ ali $|a_2| = 0$ in $|b_2| < |b_1|$ ali $|a_2| = 0$ in $|b_2| = |b_1| $ in $|c_2| \le |c_1|$ in $|d_2| \le |d_1|$. Jasno je, da prvi pogoj ne more biti izpolnjen, kar pomeni, da mora biti $a_2 = 0$ in je zato $B\in V_{E_{11}}$. Sledi, da je $V_{E_{11}}$ strnjena. Ta premislek nam tudi pokaže, da je $V_{E_{11}}$ definirana kot zgoraj res maksimalna strnjena podgrupa, ki ne vsebuje $E_{11}$. Če bi namreč na mestu $(1,1)$ vsebovala nek neničelen element, bi morala ta podgrupa zaradi strnjenosti in  definicije urejenosti vsebovati tudi $E_{11}$.
+
+Trdim, da je 
+$$
+V_{E_{12}} = \big\{
+\begin{bmatrix}
+0 & 0 \\
+c_1 & d_1 \\
+\end{bmatrix};
+c_1 , d_1 \in \Z
+\big\}.
+$$
+Jasno je to podgrupa, ki ne vsebuje $E_{12}$. Denimo, da za neko matriko $B$ oblike kot zgoraj velja, da je $|B| \le |A|, A \in V_{E_{12}}$. To je ekvivalentno temu, da je $|a_2| < 0$ ali $|a_2| = 0 $ in $|b_2| < 0$ ali $|a_2| = 0 $ in $|b_2| = 0 $ in $|c_2| \le |c_1|$ in $|d_2| \le |d_1|$. Spet vidimo, da je to lahko res le v tretjem primeru, torej je $a_2 = b_2 =0$ in je zato $B\in V_{E_{12}}$. Podgrupa je torej strnjena. Premislimo še, da je maksimalna strnjena podgrupa, ki ne vsebuje elementa $E_{12}$. Če bi vrednost elementa $E_{12}$ vsebovala nek element, ki ima na mestu $(1,1)$ nekaj neničelnega, bi zaradi strnjenosti vsebovala element $E_{12}$ (prva možnost iz definicije urejenosti), to pa ne gre. Podobno bi v primeru, da bi na mestu $(1,2)$ vsebovala neničelen element zaradi strnjenosti po drugi možnosti iz definicije urejenosti vsebovala element $E_{12}$, kar nas spet privede v protislovje z definicijo vrednosti. Sklenemo, da je zgoraj definirana podgrupa res vrednost elementa $E_{12}$.
+
+Vrednost elementa $E_{21}$ je 
+$$
+V_{E_{21}} = \big\{
+\begin{bmatrix}
+0 & 0 \\
+0 & d_1 \\
+\end{bmatrix};
+d_1 \in \Z
+\big\}.
+$$
+To je res podgrupa, ki ne vsebuje elementa $E_{21}$. Preverimo, da je strnjena. Naj bo $B$ tak kot zgoraj in $|B| \le |A|, A\in V_{E_{21}}$. To pomeni da je $|a_2| < 0$ ali $ |a_2| =0 $ in $|b_2|<0$ ali $|a_2| = 0 $ in $|b_2| = 0$ in $|c_2|\le 0$ in $|d_2| \le | d_1|$. To implicira, da je $a_2 = b_ 2 = c_2 = 0$ in je zato $B\in V_{E_{21}}$, torej je to strnjena podgrupa. Premislimo še, da je maksimalna strnjena podgrupa, ki ne vsebuje elementa $E_{21}$. Podobno kot zgoraj, bi v primeru, da bi vrednost elementa $E_{21}$ vsebovala matriko, ki bi imela nekaj neničelnega na mestu $(1,1)$ ali $(1,2)$ zaradi strnjenosti takoj sledilo, da vsebuje še $E_{21}$, kar pa ne gre. Seveda tudi v primeru, ko bi na mestu $(2,1)$ vsebovala nekaj neničelnega (v prvi vrstici pa le dve ničli) po tretji možnosti iz definicije urejenosti zaradi strnjenosti podgrupe sledi, da vsebuje $E_{21}$, kar pa seveda ne gre. Našli smo torej vrednost elementa $E_{21}$.
+
+Vrednost elementa $E_{22}$ pa je 
+$$
+V_{E_{22}} = \big\{
+\begin{bmatrix}
+0 & 0 \\
+c_1 & 0 \\
+\end{bmatrix};
+c_1 \in \Z
+\big\}. 
+$$
+To je res podgrupa, ki ne vsebuje $E_{22}$. Enako kot v prejšnjem primeru vidimo, da je strnjena. Na enak način kot v prejšnjem primeru vidimo še, da je to res maksimalna strnjena podgrupa, ki ne vsebuje elementa $E_{22}$, torej je to res vrednost $E_{22}$.
+
 \item[(c)]
 \item[(d)]
 \end{enumerate}

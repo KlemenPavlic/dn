@@ -212,7 +212,32 @@ Rešitev te naloge je v članku "The Riesz Interpolation Property for the Space 
 \newline
 Če ne zahtevamo zvezne odvedljivosti in opazujemo prostor zveznih funkcij se dokaz precej poenostavi. Prostor zveznih funkcij je namreč mreža v tej urejenosti, saj je za $f,g\in \mathcal{C}[a,b]$ tudi $f\lor g = \max\{f,g\} \in \mathcal{C}[a,b] $.
 
-Dopolnimo še rešitev iz Lavričeve knjige, kjer pokaže, da ima $\mathcal{C}^{(1)} [a,b]$ Rieszovo dekompozicijsko lastnost.
+Dopolnimo še rešitev iz Lavričeve knjige, kjer pokaže, da ima $\mathcal{C}^1 [0,1]$ Rieszovo dekompozicijsko lastnost. Izberimo torej funkcije $g,f_1,f_2 \in \mathcal{C}^1[a,b]$ za katere velja $0\le g,f_1, f_2$ in $g\le f = f_1 + f_2$. Definiramo funkciji 
+$$
+g_i(x) = 
+\left\{
+\begin{array}{l l}
+\frac{f_i(x) g(x)}{f(x)}, & \text{ če } f(x) \neq 0 \\
+0, & \text{ če } f(x) = 0
+\end{array}
+\right.
+, i = 1,2.
+$$
+Ker je $g\le f$ oziroma $\frac{g(x)}{f(x)} \le 1$ za $x$, kjer je $f(x) \neq 0$, takoj sledi, da je $0\le g_i  \le f_i$. Jasno je tudi, da velja $g= g_1 + g_2$. Preveriti moramo torej le še, da je $g_i \in \mathcal{C}^1[0,1]$. V točkah $x$ kjer je $f(x) \neq 0$ (torej je $f(x) > 0$), je funkcija $g_i$ očitno zvezno odvedljiva (sledi iz pravila za odvod kvocienta). Naj bo torej $x_0 \in (0,1)$ tak, da je $f(x_0) = 0$. Ker sta funkciji $f_i$ nenegativni, sledi $f_i(x_0) = 0, i=1,2$ in ker je $0\le g\le f$, je še $g(x_0) = 0$. Ker so funkcije $f_1,f_2,g$ nenegativne, to pomeni, da funkcije $f_1,f_2,g$ dosežejo minimum v točki $x_0$. Ker je ta iz notranjosti intervala, to pomeni, da je $f_1'(x_0) = f_2'(x_0)= g'(x_0)=0$. Potem pa za dovolj majhen $h\neq 0$ velja
+$$
+\big| \frac{g_i(x_0 + h) - g_i(x_0)}{h}\big| =\big|\frac{g_i(x_0+h)}{h}\big| \le \big|\frac{g(x_0+h)}{h}\big| = \big|\frac{g(x_0+h) - g(x_0)}{h}\big| \xrightarrow[h\rightarrow 0]{} 0.
+$$
+To pomeni, da je funkcija $g_i$ odvedljiva v $x_0$ in je $g'(x_0) = 0$. Če je $x$ tak, da je $f(x)>0$, potem iz neenakosti med fukcijami $f_1,f_2,g$ takoj lahko ocenimo
+$$
+|g_i'(x) - g_i'(x_0) | = |g_i'(x)| = \big|\frac{f_i'(x) g(x) + f_i(x) g'(x)}{f(x)} - \frac{f_i(x) g(x) f'(x)}{(f(x))^2}  \big| \le 
+$$
+$$
+\big| f_i'(x)  \frac{g(x)}{f(x)} \big| + \big| \frac{f_i(x)}{f(x)} g'(x)\big| + \big| \frac{f_i(x)}{f(x)}\frac{g(x)}{f(x)} f'(x) \big| \le
+$$
+$$
+|f_i'(x)| + |g'(x)| + |f'(x)| \xrightarrow[x\rightarrow x_0]{} |f_i'(x_0)| + |g'(x_0)| + |f'(x_0)| = 0.
+$$
+Sledi, da je $g_i'$ zvezna v $x_0$. Ostane nam še primer, ko je $f$ enaka 0 v krajišču. 
 
 \begin{flushleft}
 4. naloga

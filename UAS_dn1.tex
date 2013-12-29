@@ -207,9 +207,12 @@ Dokažimo, da ima vektorski prostor $\mathcal{C}^{(1)} [a,b]$ vseh zvezno odvedl
 \emph{Opomba}
 \newline
 Rešitev te naloge je v članku "The Riesz Interpolation Property for the Space of Continously Differentiable Functions", ki ste nama ga dali na predavanjih. 
-Premislimo torej, kaj se poenostavi, če ne zahtevamo zvezne odvedljivosti. Obdelajmo še rešitev iz Lavričeve knjige, kjer dela z dekompozicijsko lastnostjo.
 \newline
 \emph{Rešitev}
+\newline
+Če ne zahtevamo zvezne odvedljivosti in opazujemo prostor zveznih funkcij se dokaz precej poenostavi. Prostor zveznih funkcij je namreč mreža v tej urejenosti, saj je za $f,g\in \mathcal{C}[a,b]$ tudi $f\lor g = \max\{f,g\} \in \mathcal{C}[a,b] $.
+
+Dopolnimo še rešitev iz Lavričeve knjige, kjer pokaže, da ima $\mathcal{C}^{(1)} [a,b]$ Rieszovo dekompozicijsko lastnost.
 
 \begin{flushleft}
 4. naloga
@@ -395,7 +398,7 @@ Naj bo $R$ množica vseh realnih števil, ki so ničle polinomov s celoštevilsk
 \begin{enumerate}
 \item[(a)] Vemo, da je število realnih ničel polinoma manjše ali enako njegovi stopnji. To pa pomeni, da je vseh realnih števil, ki so ničle polinomov s celoštevilskimi koeficienti kvečjemu toliko, kot je polinomov s celoštevilskimi koeficienti. Velja $|R| \le |\cup_{i=1}^\infty \mathbb{P}_n(\Z)|$, kjer je $\mathbb{P}_n(\Z)$ množica vseh polinomov s celoštevilskimi koeficienti stopnje kvečjemu $n$. Velja $|\mathbb{P}_n(\Z)| = |\Z^n| = |\N|$. Sledi, da ima  $R$ največ števno elementov. Jasno pa je tudi, da je $\Z \subseteq R$, saj je vsak $a\in \Z$ ničla moničnega celoštevilskega polinoma $x-a$. Sledi, da ima $R$ števno elementov.
 
-\item[(b)] Preverimo najprej, da je $R$ zaprta za invertiranje. Naj bo $a\in R$ in $p\in \Z[x]$ polinom oblike $p(x) = \alpha_0 x^n + \alpha_1 x^{n-1} + \dots  + \alpha_{n-1}x +\alpha_n$, ki zadošča $0=p(a) =  \alpha_0 a^n + \alpha_1 a^{n-1} + \dots  + \alpha_{n-1}a +\alpha_n = a^n (\alpha_0 + \alpha_1 a^{-1} + \dots + \alpha_{n-1} (a^{-1})^{n-1} + \alpha_n (a^{-1})^{n})$. Sledi, da je $(\alpha_0 + \alpha_1 a^{-1} + \dots + \alpha_{n-1} (a^{-1})^{n-1} + \alpha_n (a^{-1})^{n}) = 0$ in zato za polinom $\tilde{p}(x) = (\alpha_0 + \alpha_1 x + \dots + \alpha_{n-1} x^{n-1} + \alpha_n x^{n})$ velja $\tilde{p}(a^{-1}) = 0$. Sledi, da je $a^{-1}\in R$.
+\item[(b)] Preverimo najprej, da je $R$ zaprta za invertiranje. Naj bo $0\neq a\in R$ in $p\in \Z[x]$ polinom oblike $p(x) = \alpha_0 x^n + \alpha_1 x^{n-1} + \dots  + \alpha_{n-1}x +\alpha_n$, ki zadošča $0=p(a) =  \alpha_0 a^n + \alpha_1 a^{n-1} + \dots  + \alpha_{n-1}a +\alpha_n = a^n (\alpha_0 + \alpha_1 a^{-1} + \dots + \alpha_{n-1} (a^{-1})^{n-1} + \alpha_n (a^{-1})^{n})$. Sledi, da je $(\alpha_0 + \alpha_1 a^{-1} + \dots + \alpha_{n-1} (a^{-1})^{n-1} + \alpha_n (a^{-1})^{n}) = 0$ in zato za polinom $\tilde{p}(x) = (\alpha_0 + \alpha_1 x + \dots + \alpha_{n-1} x^{n-1} + \alpha_n x^{n})$ velja $\tilde{p}(a^{-1}) = 0$. Sledi, da je $a^{-1}\in R$.
 
 DOPOLNITI
 

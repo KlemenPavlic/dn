@@ -237,7 +237,40 @@ $$
 $$
 |f_i'(x)| + |g'(x)| + |f'(x)| \xrightarrow[x\rightarrow x_0]{} |f_i'(x_0)| + |g'(x_0)| + |f'(x_0)| = 0.
 $$
-Sledi, da je $g_i'$ zvezna v $x_0$. Ostane nam še primer, ko je $f$ enaka 0 v krajišču. 
+Sledi, da je $g_i'$ zvezna v $x_0$. Ostane nam še primer, ko je $f$ enaka 0 v krajišču. Poglejmo si najprej primer, ko je $x_0\in \{0,1\}$ tak, da je $f(x_0) = 0 $ in $f'(x_0) \neq 0$. Obravnavajmo primer, ko je $x_0 = 0$. Potem mora veljati še $f'(x_0) > 0$ (funkcija ne more biti padajoča. ker je nenegativna). Enako kot zgoraj sledi še $f_1(0) = f_2(0) = g(0) = 0$. Ker je $f'(0) \neq 0$, je še $f(h) > 0$ za dovolj majhen pozitiven $h$. Za take $h$ potem velja formula
+$$
+g_i'(h) = \frac{f_i'(h) g(h) + f_i(h) g'(h)}{f(h)} - \frac{f_i(h)g(h)f'(h)}{(f(h))^2}. 
+$$
+Velja
+$$
+\frac{g_i(0+h)-g_i(0) }{h} = \frac{g_i(h)}{h} = \frac{1}{h} \frac{f_i(h) g(h)}{f(h)}\frac{h}{h} = \frac{(f_i(h)/h)(g(h)/h)}{f(h)/h}=
+$$
+$$
+\frac{((f_i(h)-f_i(0))/h)((g(h)-g(0))/h)}{(f(h)-f(0))/h}\xrightarrow[h\rightarrow 0]{} \frac{f_i'(0) g'(0)}{f'(0)}.
+$$
+Sledi torej, da je $g_i'(0) = \frac{f_i'(0) g'(0)}{f'(0)}$. Sledi odvedljivost. Preverimo še zveznost odvoda. Preoblikujemo zgoraj zapisano formulo za odvod kvocienta pri majhnih pozitivnih $h$. Iz Taylorjevega razvoja sledi, da je $f_i(h) = 0 + f_i'(0) h + o(h)$ in $g(h) = 0 + g'(0)h+o(h)$. Zapišemo lahko 
+$$
+\frac{f_i'(h) g(h) + f_(h) g'(h)}{f(h)} = \frac{f_i'(h) (g'(0) + \frac{o(h)}{h})  +  (f_i'(0) + \frac{o(h)}{h} )g'(h)}{f(h) / h}\xrightarrow[h\rightarrow 0]{} \frac{ 2f_i'(0)g'(0)}{f'(0)}
+$$
+in
+$$
+\frac{f_i(h)g(h) f'(h)}{(f(h))^2} = \frac{(f_i'(0) + \frac{o(h)}{h}) (g'(0) + \frac{o(h)}{h})f'(h) }{(f(h)/h)^2} \xrightarrow[h\rightarrow 0]{} \frac{f_i'(0)g'(0)}{f'(0)}.
+$$
+Iz zgornje enačbe za odvod kvocienta za majhne pozitivne $h$ potem sledi, da je $\lim_{h\rightarrow 0}g_i'(h) = \frac{ 2f_i'(0)g'(0)}{f'(0)} - \frac{f_i'(0)g'(0)}{f'(0)} = \frac{f_i'(0)g'(0)}{f'(0)} = g_i'(0)$ (zadnja enakost velja po zgoraj ugotovljenem). To pa pomeni, da je $g_i'$ zvezen v 0. Za krajišče 1 velja podoben premislek ali pa apliciramo pravkar ugotovljeno na funkcije $g(1-x), f_i(1-x)$.
+
+Obravnavamo še $x_0\in \{0,1\} $ in $f(x_0) = f'(x_0) = 0$. Spet pogledamo najprej primer, ko je $x_0 = 0$ (za krajišče 1 podobno). Spet sledi enako kot zgoraj, da je $f_1(0) = f_2(0) = g(0) = 0$. Za majhne pozitivne $h$ potem spet velja
+$$
+0 \le \frac{g_i(h) - g_i(0)}{h} = \frac{g_i(h)}{h}\le \frac{f_i(h)}{h} = \frac{f_i(h) - f_i(0)}{h} \xrightarrow[h\rightarrow 0]{} f_i'(0) = 0.
+$$
+Sledi odvedljivost v 0 in $g_i'(0) = 0$. 
+Enako kot zgoraj izpeljemo oceno
+$$
+|g_i'(h) - g_i'(0)| = |g_i'(h)| \le |f_i'(h) | + |g'(h)| + |f'(h)| \xrightarrow[h\rightarrow 0]{} 0,
+$$
+od koder sledi še zveznost odvoda v točki 0. Sledi, da je v vseh primerih $g_i \in \mathcal{C}^1[a,b]$ in zato dani prostor res ima Rieszovo dekompozicijsko lastnost.
+
+
+
 
 \begin{flushleft}
 4. naloga

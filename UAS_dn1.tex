@@ -466,6 +466,8 @@ Preverimo sedaj, da je $R$ zaprta za seštevanje. Najprej pa opazimo, da namesto
 
 Preverimo še, da je $R$ zaprta za produkt (zastonj dobimo še zaprtost za aditivne inverze, saj $R$ vsebuje -1, ki je ničla polinoma $x+1$). Postopamo podobno kot pri vsoti. Naj bodo $a,b,p,q,A,B$ kot zgoraj. Naj bo $D$ vektorski prostor nad $\Q$, ki ga napenjajo vektorji $\{(ab)^i\}_{i=1}^r$. Upoštevajoč linearno odvisnost elementov $a^i, b^j, 0\le i \le n, 0\le j \le m$, spet lahko vsak vektor oblike $(ab)^k$ zapišemo kot vsoto elementov oblike $a^ib^j, 0\le i  \le n, 0\le j \le m$. Sledi, da je $D$ podprostor $C$ im zato je $\dim_{\Q}D \le \dim_{\Q}C < (n+1)(m+1)$. Če v $D$ zopet izberemo $r=(n+1)(m+1)$ različnih elementov $\{(ab)^i\}_{i=0}^r$, bodo torej linearno odvisni med sabo in zato zopet obstaja polinom v $\Z[x]$, ki uniči $ab$.
 
+Sledi, da je $R$ polje.
+
 \item[(c)]
 \item[(d)]
 \end{enumerate}
@@ -485,7 +487,7 @@ Naj bo $Q$ podmnožica v $\R(X)$, ki vsebuje 0 in katere neničelni elementi so 
 Dodatno vprašanje: Naj bo $K$ realno zaprta razširitev urejenega obsega $(\R(X),Q)$. Dokažimo, da $\R(X)$ ni gost v $K$ v intervalski topologiji (namig: ali obstaja tak $a \in \R(X)$, da velja $\sqrt{X} < a < 2\sqrt{X}$?).
 \emph{Rešitev}
 \begin{enumerate}
-\item[(a)]
+\item[(a)] Preverimo najprej, da je $Q+Q \subseteq Q$. Naj bosta $X^m g(x), X^n f(x)\in Q$. Predpostavimo lahko, da je $m\ge n$. Potem je $X^m g(X) + X^n f(X) = X^n (X^{m-n} g(X) + f(X)) \in Q$. Res, velja namreč $n\in \Z$, ker je $m\ge n$, pa je $X^{m-n}g(X) + f(X)$ dobro definiran in strogo pozitiven (ker $f(0)>0$) v $0$. Preverimo sedaj, da je $Q\cdot Q\subseteq Q$. Naj bosta $X^m g(X), X^n f(X) \in Q$. Predpostavimo lahko, da sta neničelna, sicer trditev očitno velja. Zapišemo lahko $X^m g(X) X^n f(X) = X^{m+n} g(X)f(X)$ in ker sta $f(X)$ in $g(X)$ dobro definirana in strogo pozitivna v 0, je tak tudi $g(X)f(X)$. Preverimo še, da je $Q\cap -Q = \{0\}$. Denimo, da je $0\neq X^m g(X) \in Q\cap - Q$. Potem je $m\in\Z$ in $g(X)$ mora biti dobro definiran v $0$, hkrati pa morata biti tako $g(0)$ kot $-g(0)$ strogo pozitivna. Protislovje. Velja, da je $Q$ pozitiven stožec na $\R(X)$. Naj bo sedaj $f(X)\in \R(X)$ poljuben element. Zapišemo ga lahko kot $f(X) = \frac{f_1(X)}{f_2(X)} = \frac{X^m \tilde{f}_1(X)}{X^n \tilde{f}_2(X)}$, kjer sta $\tilde{f}_i(0)\neq 0, i=1,2$. To lahko naprej zapišemo kot $f(X) = X^{m-n} g(X)$, kjer je $g$ dobro definiran neničelen v 0.  Če je $g(0) > 0$, je torej $f\in Q$, če pa je $g(0)< 0$, pa je $f\in -Q$. Sledi, da je $Q\cup -Q = \R(X)$.
 \item[(b)]
 \item[(c)]
 \item[(d)]

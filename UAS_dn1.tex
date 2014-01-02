@@ -497,11 +497,30 @@ Dodatno vprašanje: Naj bo $K$ realno zaprta razširitev urejenega obsega $(\R(X
 \emph{Rešitev}
 \begin{enumerate}
 \item[(a)] Preverimo najprej, da je $Q+Q \subseteq Q$. Naj bosta $X^m g(x), X^n f(x)\in Q$. Predpostavimo lahko, da je $m\ge n$. Potem je $X^m g(X) + X^n f(X) = X^n (X^{m-n} g(X) + f(X)) \in Q$. Res, velja namreč $n\in \Z$, ker je $m\ge n$, pa je $X^{m-n}g(X) + f(X)$ dobro definiran in strogo pozitiven (ker $f(0)>0$) v $0$. Preverimo sedaj, da je $Q\cdot Q\subseteq Q$. Naj bosta $X^m g(X), X^n f(X) \in Q$. Predpostavimo lahko, da sta neničelna, sicer trditev očitno velja. Zapišemo lahko $X^m g(X) X^n f(X) = X^{m+n} g(X)f(X)$ in ker sta $f(X)$ in $g(X)$ dobro definirana in strogo pozitivna v 0, je tak tudi $g(X)f(X)$. Preverimo še, da je $Q\cap -Q = \{0\}$. Denimo, da je $0\neq X^m g(X) \in Q\cap - Q$. Potem je $m\in\Z$ in $g(X)$ mora biti dobro definiran v $0$, hkrati pa morata biti tako $g(0)$ kot $-g(0)$ strogo pozitivna. Protislovje. Velja, da je $Q$ pozitiven stožec na $\R(X)$. Naj bo sedaj $f(X)\in \R(X)$ poljuben element. Zapišemo ga lahko kot $f(X) = \frac{f_1(X)}{f_2(X)} = \frac{X^m \tilde{f}_1(X)}{X^n \tilde{f}_2(X)}$, kjer sta $\tilde{f}_i(0)\neq 0, i=1,2$. To lahko naprej zapišemo kot $f(X) = X^{m-n} g(X)$, kjer je $g$ dobro definiran neničelen v 0.  Če je $g(0) > 0$, je torej $f\in Q$, če pa je $g(0)< 0$, pa je $f\in -Q$. Sledi, da je $Q\cup -Q = \R(X)$.
+
 \item[(b)] Naj bo $a\in\R$. Pokažimo, da je množica $Q_{a^+}$ ureditev. Naj bosta $r,q\in Q_{a^+}$. To pomeni, da sta $r(X-a),q(X-a)\in Q$. Ker pa je $Q$ ureditev, je tudi $r(X-a) + q(X-a) = (r+q)(X-a)\in Q$ in posledično je $r+q \in Q_{a^+}$. Sledi $Q_{a^+} + Q_{a^+} \subseteq Q_{a^+}$. Naj bo zdaj $r\in Q_{a^+} \cap -Q_{a^+}$. To pomeni, da je $r(X-a) \in Q$ in $-r(X-a) \in Q$. Ker je $Q\cap -Q = 0$, je $r(X-a) = 0$ in posledično še $r=0$. Sledi $Q_{a^+} \cap -Q_{a^+} = \{0\}$. Naj bosta $r,q$ kot zgoraj. Zapišemo lahko $r(X-a) = X^m g(X)$ in $q(X-a) = X^n f(X)$, kjer sta $g$ in $f$ dobro definirana in strogo pozitivna v 0. Potem velja $r(X-a)g(X-a) = X^{m+n} (g(X) f(X))$, kjer je tudi $g(X)f(X)$ dobro definiran in strogo pozitiven v 0. Sledi, da je $r(X-a)q(X-a)\in Q$ in posledično je $Q_{a^+} Q_{a^+} \subseteq Q_{a^+}$. Sledi, da je $Q_{a^+}$ ureditev. Preverimo še linearnost. Naj bo $r\in \R(X)$ poljuben. Poglejmo si $R(X-a)$. Ker je $Q$ linearna, je bodisi $r(X-a) \in Q$ bodisi $r(X-a) \in -Q$. V prvem primeru sledi, da je $r\in Q_{a^+}$, v drugem primeru pa je $r\in -Q_{a^+}$. Sledi $Q_{a^+} \cup -Q_{a^+} = \R(X)$. Na enak način dokažemo željeno še za ostale tri množice.
-\item[(c)]
-\item[(d)]
+
+\item[(c)] Najprej opazimo, da je $X=X\cdot 1$ in da je polinom $\epsilon - X$ dobro definiran in strogo pozitiven v 0 za pozitivne $\epsilon$. To pomeni, da je res $X, \epsilon - X \in Q$.
+
+DOPOLNITI
+
+\item[(d)] Ločimo nekaj primerov, glede na to, kaj velja za $X$:
+\begin{enumerate}
+\item $\exists a \in \R$, da za vsak $\epsilon \in \R^{>0}$ velja $a < X < a+ \epsilon$,
+\item $\exists a \in \R$, da za vsak $\epsilon \in \R^{>0}$ velja $a-\epsilon < X < a$,
+\item $x>\R$,
+\item $x<\R$.
+\end{enumerate}
+V prvem primeru očitno velja $X-a > 0$ in $X-a < \epsilon$. Če označimo z $Y=X-a$, dobimo $Y>0$ in $Y<\epsilon$. Po točki (c) je $Q$ edina ureditev za katero to velja. Sklenemo torej, da je $Y = X-a\in Q$. Dobimo torej ravno ureditev $Q_{a^+}$. Podobno v drugem primeru dobimo, da velja $a-X>0$ in $X-a < \epsilon$. Iz enoličnosti ureditve v kateri velja $X>0, X<\epsilon$ sledi, da smo dobili ureditev $Q_{a^-}$. Pri (c) velja $X>\R$, kar pomeni, da je $X>\R^+$. To je ekvivalentno temu, da je $0 < \frac{1}{X} < \R^+$. Če spet označimo z $Y=\frac{1}{X}$, potem velja $0 < Y < \R^+$, torej je $Y\in Q$. Tako dobimo ravno ureditev $Q_{+\infty}$. V primeru (d) pa velja $X<\R$. To pomeni, da velja še $X< \R^-$, kar je ekvivalentno temu, da je $-X > \R^+$ oziroma $0 < -\frac{1}{X} < \R^+$. Tako dobimo ureditev $Q_{-\infty}$. Ker smo zgoraj obravnavali vse primere, glede na to, kakšen je $X$ v primerjavi z drugimi elementi, smo s tem pokrili vse ureditve. Pri tem smo vsakič dobili ureditev, ki je bila take oblike kot ena izmed štirih zgoraj definiranih. Sledi, da so to vse ureditve.
+
+Pokažimo sedaj, da so ureditve teh štirih oblik paroma različne med seboj.
+
+
+
 \item[(e)]
+
 \item[(f)]
+
 \end{enumerate}
 
 \begin{flushleft}

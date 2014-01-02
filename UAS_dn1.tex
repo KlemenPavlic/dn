@@ -514,6 +514,48 @@ DOPOLNITI
 V prvem primeru očitno velja $X-a > 0$ in $X-a < \epsilon$. Če označimo z $Y=X-a$, dobimo $Y>0$ in $Y<\epsilon$. Po točki (c) je $Q$ edina ureditev za katero to velja. Sklenemo torej, da je $Y = X-a\in Q$. Dobimo torej ravno ureditev $Q_{a^+}$. Podobno v drugem primeru dobimo, da velja $a-X>0$ in $X-a < \epsilon$. Iz enoličnosti ureditve v kateri velja $X>0, X<\epsilon$ sledi, da smo dobili ureditev $Q_{a^-}$. Pri (c) velja $X>\R$, kar pomeni, da je $X>\R^+$. To je ekvivalentno temu, da je $0 < \frac{1}{X} < \R^+$. Če spet označimo z $Y=\frac{1}{X}$, potem velja $0 < Y < \R^+$, torej je $Y\in Q$. Tako dobimo ravno ureditev $Q_{+\infty}$. V primeru (d) pa velja $X<\R$. To pomeni, da velja še $X< \R^-$, kar je ekvivalentno temu, da je $-X > \R^+$ oziroma $0 < -\frac{1}{X} < \R^+$. Tako dobimo ureditev $Q_{-\infty}$. Ker smo zgoraj obravnavali vse primere, glede na to, kakšen je $X$ v primerjavi z drugimi elementi, smo s tem pokrili vse ureditve. Pri tem smo vsakič dobili ureditev, ki je bila take oblike kot ena izmed štirih zgoraj definiranih. Sledi, da so to vse ureditve.
 
 Pokažimo sedaj, da so ureditve teh štirih oblik paroma različne med seboj.
+\begin{itemize}
+\item $Q_{+\infty} \neq Q_{-\infty}$, ker v prvi ureditvi $X>0$, v drugi pa $X<0$.
+
+\item $Q_{+\infty}\neq Q_{a^+}$:
+\begin{itemize}
+\item če $a>0$, je $X\in Q_{+\infty}$; po drugi strani pa je $X\in Q_{a^+}\Leftrightarrow X-a \in Q\Leftrightarrow -a >0$, kar pa ne velja, torej $X\notin Q_{a^+}$,
+\item če $a=0$, potem je $Q_{a^+} = Q$ in po (c) vsebuje $\epsilon - X$ za neki $\epsilon > 0$. Po drugi strani pa je $\epsilon - X 	\in Q_{+\infty}\Leftrightarrow \epsilon - \frac{1}{X} = \frac{\epsilon X - 1}{X} \in Q \Leftrightarrow - 1>0$, kar pa spet ne drži, torej $\epsilon - X \notin Q_{+\infty}$
+\item če $a<0$, potem je $X+\frac{3}{2} a \in Q_{+\infty}$ in $X+\frac{3}{2} a \notin X_{a^+}$ (To pokažemo podobno kot zgoraj, podobno bo veljalo v naslednjih točkah, zato bom te premisleke spuščal),
+\end{itemize}
+
+\item $Q_{+\infty} \neq Q_{a^-}$
+\begin{itemize}
+\item če $a\le 0$, je $X\in Q_{+\infty}$ in $X\notin Q_{a^-}$,
+\item če $a>0$, je $2a-X \in Q_{a^-} $ in $2a-X\notin Q_{+\infty}$, 
+\end{itemize}
+
+\item $Q_{-\infty} \neq Q_{a^+}$
+\begin{itemize}
+\item če $a<0$, potem je $-X\in Q_{-\infty}$ in $-X\notin Q_{a^+}$,
+\item če je $a=0$, potem je $X\in Q_{a^+}$ in $X\notin Q_{-\infty}$,
+\item če je $a>0$, potem je $X+2a \in Q_{a^+}$ in $X+2a \notin Q_{-\infty}$,
+\end{itemize}
+
+\item $Q_{-\infty}  \neq Q_{a^-}$
+\begin{itemize}
+\item če $a>0$, je $X\in Q_{a^-}$ in $X\notin Q_{-\infty}$,
+\item če $a=0$, je $1+X\in Q_{a^-}$ in $1+X\notin Q_{-\infty}$,
+\item če $a<0$, je $-2a + X\in Q_{a^-}$ in $-2a + X\notin Q_{-\infty}$,
+\end{itemize}
+
+\item $Q_{a^+} \neq Q_{a^-}$
+\begin{itemize}
+\item če $a=0$, potem je $X\in Q_{a^+}$ in $X\notin Q_{a^-}$,
+\item če $a>0$, potem je $X\in Q_{a^-}$ in $X\notin Q_{a^+}$,
+\item če $a<0$, potem je $X\in Q_{a^+}$ in $X\notin Q_{a^-}$,
+\end{itemize}
+
+\item $Q_{a^+} \neq Q_{b^+}$ za $a\neq b$. Velja bodisi $a>b$ bodisi $b>a$. Predpostavimo lahko, da je $a>b$, sicer ju preimenujemo. Potem je $b+X\in Q_{b^+}$, ker je $b+(X-b) = X = X\cdot 1 \in Q$ in $b+X\notin Q_{a^+}$, ker $b-a\not > 0$.
+
+
+\item $Q_{a^-} \neq Q_{b^-}$ za $a \neq b$. Spet lahko predpostavimo, da je $a>b$. Potem je $b-X\in Q_{b^-}$ in $b-X\notin Q_{a^-}$.
+\end{itemize}
 
 
 

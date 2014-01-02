@@ -437,12 +437,8 @@ To je res podgrupa, ki ne vsebuje $E_{22}$. Enako kot v prejšnjem primeru vidim
 
 \item[(c)] Dokazati moramo, da smo v prejšnji točki dobili vse prapodgrupe grupe $G$. To preprosto sledi iz zgornjih premislekov o maksimalnosti strnjene podgrupe, ki ne vsebuje določenega elementa. Če imamo podgrupo, ki ima na mestu $(1,1)$ nekaj neničelnega, so zaradi strnjenosti in definicije urejenosti v njej tudi vse štiri matrične enote in dobimo kar celo grupo $G$. Denimo torej, da imamo podgrupo, ki vsebuje le matrike, ki imajo 0 na mestu $(1,1)$, drugje pa poljuben element. Tako dobimo $V_{E_{11}}$ (zaradi strnjenosti to podgrupo dobimo vedno, ko podgrupa vsebuje matriko, ki ima na mestu $(1,2)$ nekaj neničelnega) . Denimo sedaj, da imamo na mestih $(1,1),(1,2)$ v vseh matrikah iz podgrupe same ničle. Če imamo v podgrupi kako matriko, ki ima na mestu $(2,1)$ nekaj neničelnega in še neko matriko, ki ima na mestu $(2,2)$ neničelen element, potem zaradi strnjenosti dobimo podgrupo $V_{E_{12}}$. Če podgrupa vsebuje le matrike, ki imajo neničelne elemente le na mestu $(2,1)$ (oziroma $(2,2)$), potem zaradi strnjenosti vsebuje element $E_{21}$ (oziroma $E_{22}$) in je zato enaka $V_{E_{22}}$ (oziroma $V_{E_{21}}$). Če podgrupa ne vsebuje nobene matrike, ki bi imela na mestu $(2,1)$ ali $(2,2)$ nekaj neničelnega, potem ta podgrupa ne more vsebovati nobene matrične enote in je zato to trivialna podgrupa. 
 
-\item[(d)] Po (a) vemo, da je $G$ mrežno urejena. Po točkah (b) in (c) vemo, da so vse vrednosti elementov iz $G$ ravno $\Lambda=\{V_{E_{11}}, V_{E_{12}}, V_{E_{21}}, V_{E_{22}}\}$. Množico $\Lambda$ uredimo z relacijo nasprotno inkluziji, kar pomeni, da je za $A,B\in \Lambda$ $A\le B$ natanko tedaj, ko je $B\subseteq A$. Grupo $G$ potem vložimo v grupo $\prod_{\lambda \in \Lambda} \R_{\lambda} = \R_{V_{E_{11}}} \times \R_{V_{E_{12}}} \times\R_{V_{E_{21}}} \times \R_{V_{E_{22}}}$  z operacijo seštevanja. 
-
-UREJENOST NA PRODUKTU 
-
-Urejenost na produktu pa je definirana takole. Pogledamo na katerih mestih ima element neničelne komponente, potem pa med vsemi takimi indeksi iz $\Lambda$ izberemo tistega, ki je minimalne v urejenosti na $\Lambda$ in pogledamo, kakšnega predznaka je tista komponenta
-.\end{enumerate}
+\item[(d)] Po (a) vemo, da je $G$ mrežno urejena. Po točkah (b) in (c) vemo, da so vse vrednosti elementov iz $G$ ravno $\Lambda=\{V_{E_{11}}, V_{E_{12}}, V_{E_{21}}, V_{E_{22}}\}$. Množico $\Lambda$ uredimo z relacijo nasprotno inkluziji, kar pomeni, da je za $A,B\in \Lambda$ $A\le B$ natanko tedaj, ko je $B\subseteq A$. Dobimo neenakosti $V_{E_{11}} \le V_{E_{12}} \le V_{E_{21}}, V_{E_{22}}$, pri čemer zadnja dva elementa nista primerljiva.  Grupo $G$ potem vložimo v Hahnov produkt, to je v delno urejeno grupo $\prod_{\lambda \in \Lambda} \R_{\lambda} = \R_{V_{E_{11}}} \times \R_{V_{E_{12}}} \times\R_{V_{E_{21}}} \times \R_{V_{E_{22}}}$  z operacijo seštevanja. 
+\end{enumerate}
 
 \begin{flushleft}
 6. naloga
@@ -555,8 +551,11 @@ Pokažimo sedaj, da so ureditve teh štirih oblik paroma različne med seboj.
 
 
 \item $Q_{a^-} \neq Q_{b^-}$ za $a \neq b$. Spet lahko predpostavimo, da je $a>b$. Potem je $b-X\in Q_{b^-}$ in $b-X\notin Q_{a^-}$.
-\end{itemize}
 
+\end{itemize}
+KAJ PA PRIMER $Q_{a^+} \neq Q_{b^-}$
+
+MOGOČE TOLE NI RAVNO NAJBOLJE
 
 
 \item[(e)]

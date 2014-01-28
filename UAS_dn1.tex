@@ -601,7 +601,10 @@ Naj bo $K$ urejen obseg. Dokažimo:
 \item[(a)] Naj bo najprej grupa $K^{>0}$ arhimedska. Pokažimo, da je $K$ arhimedski. To je ekvivalentno temu, da $K$ nima infinitezimalnih elementov. Denimo nasprotno, da ima infinitezimalni element $a \neq 0$. To pomeni, da za vsako naravno število $n$ velja $n|a| \le 1$. Izberimo zdaj naravno število $k > 1$. Potem zgornji pogoj pove, da za vsako naravno število $m$ velja $k^m |a| \le 1$. Ker so elementi $|a|, k^m > 0$, ta zveza velja tudi v multiplikativni grupi $K^{>0}$. To pa je ekvivalentno s tem, da v $K^{>0} $ za vsako naravno število $m$ velja $k^m \le |a|^{-1}$. Po krepki arhimedskosti grupe $K^{>0}$, ki je za $\ell$-grupe ekvivalentna arhimedskosti, potem sledi, da je $k\le 1$, kjer je $1$ enota $K^{>0}$. Protislovje.
 
 Naj bo zdaj še $K$ arhimedski. Po H\"{o}lderjevem izreku lahko $K$ urejenostno vložimo v $\R$ (označimo z $\varphi$ to vložitev). Potem je grupa $K^{>0}$ izomorfna neki podgrupi $(\R^{>0}, \cdot, \le)$. Vzemimo poljubna pozitivna elementa $a,b$, za katera velja $a^n \le b$, kjer je $n\in\Z$ poljuben. Potem za vsako celo število $n$ velja $ \varphi(a)^n =  \varphi(a^n) \le \varphi(b)$. To pa že pomeni, da je $\varphi(a) = 1$, torej je tudi $a=1$. To pa ravno pomeni, da je $K^{>0}$ arhimedska grupa.
-\item[(b)]
+
+\item[(b)] Naj bo najprej valuacija $v$ na $K$ kompatibilna z ureditvijo na $K$. Označimo z $L = \{a \in K| v(a) = 0 \text{ in } a> 0\}$. Pokažimo najprej, da je $L$ podgrupa v $K^{>0}$. Res, saj za poljubna $a,b\in L$ velja $ab>0$ in $v(ab) = v(a) + v(b)  =  0+0 =  0$. Podobno je za $a\in L$ tudi $a^{-1}\in L$, saj je strogo pozitiven in velja $v(a^{-1} ) = -v(a) = 0$. Pokažimo še, da je urejenostno konveksna. Zadošča torej videti, da je za vsak $a\in L$ tudi $[1, a]_{K^{>0}} \subseteq L$. Naj bo torej $b\in [1,a]_{K^{>0}}$ poljuben. To pomeni, da je $1\le b \le a$. Videti moramo le še, da je $v(b) = 0$. To pa sledi iz kompatibilnosti. Velja namreč, da je $0 = v(1) \ge v(b)$ in $v(b) \ge v(a)  = 0$. Če neenakosti združimo, dobimo ravno $v(b) = 0$.
+
+Dokažimo še obrat. DOPOLNITI
 \end{enumerate}
 
 \begin{flushleft}

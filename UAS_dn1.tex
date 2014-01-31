@@ -576,8 +576,40 @@ Naj bosta $a\neq b$ poljubni realni števili. Iz zgornjega sledi, da ima vsak pa
 %MOGOČE TOLE NI RAVNO NAJBOLJE
 
 
-\item[(e)]
+\item[(e)] Označimo s $S= \{r\in \R(X)| \exists \epsilon  \in \R^{>0} : r|_{(0,\epsilon)} \ge 0\}$. Pokažimo, da je $Q=S$. Najprej $Q\subseteq S$. Najprej opazimo, da za vsako celo število $m$ očitno velja $X^m|_{(0,\infty)}>0$. Vzemimo sedaj neki $f(X)\in \R(X)$, ki je dobro definiran in strogo pozitiven v 0. Funkcija $f$ je torej kvociet dveh polinomov, ki nista deljiva z $X$. Ker ima $f$ lahko le končno mnogo polov, obstaja $\epsilon_1>0$, tako da na intervalu $(0,\epsilon_1)$ funkcija $f$ nima pola. Ker pa je $f(0)>0$ mora zaradi zveznosti na $[0,\epsilon_1]$ obstajati $0<\epsilon\le \epsilon_1$, da je $f|_{(0,\epsilon)}\ge 0$. Sledi, da je $f\in S$. Poljubno funkcijo $g\in  Q$ pa najprej zapišemo kot $g(X) = X^m f(X)$, kjer je $f(X)$ dobro definirana in posledično tudi strogo pozitivna v 0. Potem tako kot zgoraj poiščemo $\epsilon >0$, da je $f|_{(0,\epsilon)}\ge 0$. Po zgornjem premisleku je potem tudi $g|_{(0,\epsilon)}\ge 0$. Sledi $Q\subseteq S$. 
+Pokažimo še obrat. Naj bo $r\in \R(X)$ in naj obstaja $\epsilon >0$, da je $r|_{(0,\epsilon)}>0$. Funkcijo $r$ lahko zapišemo kot $r(X) = X^m \tilde{r}(X)$, kjer je $\tilde{r}$ dobro definirana in neničelna v 0. Pokazati moramo še, da je strogo pozitivna v 0. Ker je $X^m>0$ na $(0,\infty)$, je tudi $\tilde{r} (X) = r(X) / X^m \ge 0$ na $(0,\epsilon)$. Zaradi zveznosti je potem $\tilde{r}(0) \ge 0$, po predpostavki pa je $\tilde{r}(0) \neq 0$. Funkcijo $r\in S$ smo zapisali kot $r(X) = X^m \tilde{r}(X)$, kjer je $m\in \Z$ in je $\tilde{r}$ dobro definirana in strogo pozitivna v 0. Sledi, da je $r\in Q$, torej $Q=S$.
 
+Določimo podobne karakterizacije še za ostale ureditve iz točke (b). Velja 
+$$
+Q_{a^+} = \{r\in \R(X)| r(X-a) \in Q\} = \{r\in \R(X)| \exists \epsilon >0: r(X-a)|_{(0,\epsilon)} \ge 0\}
+$$
+$$
+= \{r\in \R(X)| \exists \epsilon >0: r(X)|_{(-a,-a+\epsilon) \ge 0}\},
+$$
+$$
+Q_{a^-} = \{r\in \R(X)|r(a-X) \in Q\} =  \{ r\in \R(X)|\exists \epsilon >0: r(a-X)|_{(0,\epsilon)}\ge 0\}
+$$
+$$
+= \{r\in \R(X)| \exists \epsilon >0: r(X)|_{(a-\epsilon,a)} \ge 0\},
+$$
+$$
+Q_{+\infty} = \{r\in \R(X)|r(\frac{1}{X}) \in Q\} = \{r\in \R(X)|\exists \epsilon >0: r(\frac{1}{X})|_{(0,\epsilon)} \ge 0\}
+$$
+$$
+= \{r\in \R(X)| \exists \epsilon >0 : r(X)|_{(\frac{1}{\epsilon},\infty)}\ge 0\} 
+$$
+$$
+= \{r\in \R(X)| \exists \delta >0 : r(X)|_{(\delta,\infty)}\ge 0\},
+$$
+$$
+Q_{-\infty} = \{r\in \R(X) | r(-\frac{1}{X}) \in Q\} = \{ r\in \R(X)| \exists \epsilon >0: r(-\frac{1}{X})|_{(0,\epsilon)} \ge 0 \}
+$$
+$$
+= \{r\in \R(X)| \exists \epsilon >0 : r(X)|_{(-\infty, -\frac{1}{\epsilon})} \ge 0\}
+$$
+$$
+=\{r\in \R(X)| \exists \delta > 0: r(X)|_{(-\infty,-\delta)} \ge 0\}.
+$$
 \item[(f)]
 
 \end{enumerate}

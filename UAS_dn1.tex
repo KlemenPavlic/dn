@@ -495,6 +495,7 @@ Naj bo $Q$ podmnožica v $\R(X)$, ki vsebuje 0 in katere neničelni elementi so 
 \item[(f)] Določimo oziroma podrobno izpeljimo naravne valuacije ureditev iz točke (b).
 \end{enumerate}
 Dodatno vprašanje: Naj bo $K$ realno zaprta razširitev urejenega obsega $(\R(X),Q)$. Dokažimo, da $\R(X)$ ni gost v $K$ v intervalski topologiji (namig: ali obstaja tak $a \in \R(X)$, da velja $\sqrt{X} < a < 2\sqrt{X}$?).
+\newline
 \emph{Rešitev}
 \begin{enumerate}
 \item[(a)] Preverimo najprej, da je $Q+Q \subseteq Q$. Naj bosta $X^m g(x), X^n f(x)\in Q$. Predpostavimo lahko, da je $m\ge n$. Potem je $X^m g(X) + X^n f(X) = X^n (X^{m-n} g(X) + f(X)) \in Q$. Res, velja namreč $n\in \Z$, ker je $m\ge n$, pa je $X^{m-n}g(X) + f(X)$ dobro definiran in strogo pozitiven (ker $f(0)>0$) v $0$. Preverimo sedaj, da je $Q\cdot Q\subseteq Q$. Naj bosta $X^m g(X), X^n f(X) \in Q$. Predpostavimo lahko, da sta neničelna, sicer trditev očitno velja. Zapišemo lahko $X^m g(X) X^n f(X) = X^{m+n} g(X)f(X)$ in ker sta $f(X)$ in $g(X)$ dobro definirana in strogo pozitivna v 0, je tak tudi $g(X)f(X)$. Preverimo še, da je $Q\cap -Q = \{0\}$. Denimo, da je $0\neq X^m g(X) \in Q\cap - Q$. Potem je $m\in\Z$ in $g(X)$ mora biti dobro definiran v $0$, hkrati pa morata biti tako $g(0)$ kot $-g(0)$ strogo pozitivna. Protislovje. Velja, da je $Q$ pozitiven stožec na $\R(X)$. Naj bo sedaj $f(X)\in \R(X)$ poljuben element. Zapišemo ga lahko kot $f(X) = \frac{f_1(X)}{f_2(X)} = \frac{X^m \tilde{f}_1(X)}{X^n \tilde{f}_2(X)}$, kjer sta $\tilde{f}_i(0)\neq 0, i=1,2$. To lahko naprej zapišemo kot $f(X) = X^{m-n} g(X)$, kjer je $g$ dobro definiran neničelen v 0.  Če je $g(0) > 0$, je torej $f\in Q$, če pa je $g(0)< 0$, pa je $f\in -Q$. Sledi, da je $Q\cup -Q = \R(X)$.
@@ -614,7 +615,7 @@ $$
 \item[(f)]
 DOPOLNITI
 
-DODATNO VPRAŠANJE
+Odgovorimo še na dodatno vprašanje. Naj bo torej $K$ realno zaprta razširitev urejenega obsega $(\R(X), Q)$. Sledi, da je element $X$ pozitiven element v $K$. Ker je slednji realno zaprt, ima vsak pozitiven element kvadratni koren, torej v $K$ obstaja $\sqrt{X}$. Pokažimo sedaj še, da ne obstaja tak $a\in \R(X)$, da bi veljalo $\sqrt{X} < a <2\sqrt{X}$. Denimo nasprotno, da tak $a$ obstaja. Potem velja tudi $X < a^2 < 4 X$, kjer so vsi elementi iz $\R(X)$, torej mora ta zveza veljati tudi v ureditvi $Q$. To pa pomeni, da je $a^2 - X, 4X - a^2 \in Q$. Zapišemo lahko $a = \frac{X^m p(X)}{X^n q(X)}$, kjer je $p(0),q(0)\neq 0$. Potem je $a^2 - X = X^{2(m-n)} \big( \frac{p(X)^2}{q(X)^2} - Xq(X)^2 X^{2(n-m)}  \big)$ in ker mora biti to pozitivno, mora biti $\frac{p(0)^2}{q(0)^2} >0$. Po drugi strani pa je $4X-a^2 = X^{2(m-n)} \big( 4X^{2(n-m) + 1}q(X) ^2 - \frac{p(X)^2}{q(X)^2}  \big)$. Ker pa mora biti to pozitivno, mora biti po definiciji urejenosti $Q$ še $-\frac{p(0)^2}{q(0)^2} >0 $. Protislovje. Sledi, da tak $a\in \R(X)$ ne obstaja. To pa že implicira, da $\R(X)$ ni gost v $K$ v intervalski topologiji. 
 
 \end{enumerate}
 

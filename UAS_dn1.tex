@@ -452,7 +452,30 @@ Naj bo $(F,<)$ urejen obseg opremljen z intervalsko topologijo (to je topologija
 \newline
 \emph{Rešitev}
 \newline
-Začnimo z inverzom. Označimo z $f(x) = x^{-1}$. Naj bo $x\in F\setminus\{0\}$ in $x^{-1}$ njegov inverz. Naj bo $(a,b)$ okolica $x^{-1} = f(x)$. Ker ima vsak element enolično določen inverz, obstajata $a_0, b_0$, da je $f(a_0) = a = a_0^{-1}$ in $f(b_0) = b = b_0^{-1}$. Ker je $a< x <b$ in ker invertiranej obrne urejenost, je $x\in (b_0,a_0)$ in $f((b_0,a_0)) = (a_0^{-1}, b_0^{-1}) = (a,b)$. Sledi, da je $f$ zvezna v $x$ in ker je bil $x$ poljuben, je invertiranje zvezna preslikava.
+Začnimo z inverzom. Označimo z $f(x) = x^{-1}$. Naj bo $x\in F\setminus\{0\}$ in $x^{-1}$ njegov inverz. Naj bo $(a,b)$ okolica $x^{-1} = f(x)$. Ker ima vsak element enolično določen inverz, obstajata $a_0, b_0$, da je $f(a_0) = a = a_0^{-1}$ in $f(b_0) = b = b_0^{-1}$. Ker je $a< x <b$ in ker invertiranje obrne urejenost, je $x\in (b_0,a_0)$ in $f((b_0,a_0)) = (a_0^{-1}, b_0^{-1}) = (a,b)$. Sledi, da je $f$ zvezna v $x$ in ker je bil $x$ poljuben, je invertiranje zvezna preslikava.
+
+Pokažimo sedaj, da je vsota $f:F\times  F \rightarrow F$, $f(x,y) = x+y$ zvezna preslikava. Naj bo $(x_0,y_0)\in F\times F$ tak par, da je $x_0 + y_0 = z$ in  naj bo $(a,b)$ okolica za $z$. Definirajmo $U = \big( \frac{a+x_0 - y_0}{2}, \frac{b+x_0 - y_0}{2}  \big) \times \big( \frac{a-x_0 + y_0}{2}, \frac{b-x_0 + y_0}{2} \big)$. Pokažimo najprej, da je to okolica točke $(x_0,y_0)$. Velja
+$$
+\frac{x_0 + a - y_0}{2} = \frac{x_0 + a -(z-x_0)}{2} = x_0 - \frac{z-a}{2} < x_0,
+$$
+$$
+\frac{x_0 + b - y_0}{2} = \frac{x_0 + b -(z-x_0)}{2} = x_0 + \frac{b-z}{2} > x_0,
+$$
+$$
+\frac{y_0 + a - x_0}{2} = \frac{y_0 + a -(z-y_0)}{2} = y_0 - \frac{z-a}{2} < y_0,
+$$
+$$
+\frac{y_0 + b - x_0}{2} = \frac{y_0 + b -(z-y_0)}{2} = y_0 + \frac{b-z}{2} > y_0,
+$$
+torej je $U$ res okolica točke $(x_0,y_0)$. Pokažimo še, da je $f|_{U} \subseteq (a,b)$. Naj bo $(u,v) \in U$. Potem velja
+$$
+f(u,v)  = u + v \ge \frac{a+x_0-y_0}{2} + \frac{a-x_0+y_0}{2} = a
+$$
+in
+$$
+f(u,v)  = u + v \le \frac{b+x_0-y_0}{2} + \frac{b-x_0+y_0}{2} = b.
+$$
+Zaključimo, da je vsota zvezna preslikava.
 
 DOPOLNITI
 

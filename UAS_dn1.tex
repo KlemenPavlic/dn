@@ -481,6 +481,11 @@ Pokažimo še, da je produkt $f:F\times F \rightarrow F, f(x,y) = xy$ zvezna pre
  Če je $x_0  + y_0 \ge 1$, potem definiramo $\delta = \frac{\epsilon}{4(x_0 + y_0)} \in F$. Sedaj lahko ocenimo $\delta((x_0 + y_0) -\delta) = \frac{\epsilon}{4(x_0 + y_0)}\big( (x_0 + y_0) - \frac{\epsilon}{4(x_0 + y_0)}\big)  = \frac{\epsilon }{4}(1 - \frac{\epsilon}{4(x_0 + y_0)^2})\le \frac{\epsilon}{4} <  \epsilon $ in 
 $\delta((x_0 + y_0) +\delta) = \frac{\epsilon}{4(x_0 + y_0)}\big( (x_0 + y_0) + \frac{\epsilon}{4(x_0 + y_0)}\big)  = \frac{\epsilon }{4}(1 + \frac{\epsilon}{4(x_0 + y_0)^2})\le \frac{\epsilon}{2} <  \epsilon $. S tem smo dobili željeni oceni za zgornja izraza. Če pa je $x_0 + y_0 < 1$, pa definiramo $\delta = \frac{(x_0 + y_0)\epsilon}{1}\in F$. Podobno kot prej lahko ocenimo $\delta((x_0 + y_0) -\delta) = \frac{\epsilon (x_0 + y_0)}{4}\big( (x_0 + y_0) - \frac{\epsilon (x_0 + y_0)}{4}\big)  = \frac{\epsilon (x_0+y_0)^2}{4}(1 - \frac{\epsilon}{4})\le \frac{\epsilon}{4} <  \epsilon $ in $\delta((x_0 + y_0) +\delta) = \frac{\epsilon (x_0 + y_0)^2}{4}(1 + \frac{\epsilon}{4})  = \frac{\epsilon }{4}(1 +\frac{1}{4})\le \frac{5\epsilon}{16} <  \epsilon $.
  
+Na podoben način poiščemo primeren $\delta$ in posledično primerno okolico še v primerih,  ko je $x_0> 0$ in $y_0 < 0$ ali $x_0 < 0$ in $y_0 < 0$ ali $x_0 < 0$ in $y_0 > 0$.
+
+Poglejmo si še primer, ko je vsaj ena izmed koordinat točke enaka 0. Denimo najprej, da je $x_0 = 0$, $y_0 \ge 0$, če je $y_0 < 0$ postopamo podobno. Če je $y_0 \ge 1$, definiramo $\delta = \frac{\epsilon}{4 y_0}$. Potem ocenimo, da za poljubna $(u,v)\in U$ velja $uv \le \delta (y_0 + \delta) =\frac{\epsilon}{4y_0}(y_0 + \frac{\epsilon}{4y_0} ) \le \frac{\epsilon}{4}(1+\frac{1}{4}) = \frac{5\epsilon}{16} < \epsilon$. Podobno je $uv \ge -\delta (y_0 + \delta) > - \epsilon$, saj je $\delta (y_0 + \delta ) = \frac{\epsilon}{4y_0} (y_0 + \frac{\epsilon}{4y_0}) \le  \frac{\epsilon}{4} ( 1 + \frac{\epsilon}{4}) \le \frac{5\epsilon}{16} < \epsilon $.
+
+
 DOPOLNITI
 
 \begin{flushleft}

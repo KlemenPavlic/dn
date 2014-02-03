@@ -477,6 +477,10 @@ f(u,v)  = u + v \le \frac{b+x_0-y_0}{2} + \frac{b-x_0+y_0}{2} = b.
 $$
 Zaključimo, da je vsota zvezna preslikava.
 
+Pokažimo še, da je produkt $f:F\times F \rightarrow F, f(x,y) = xy$ zvezna preslikava. Naj bo zopet $(x_0,y_0)\in F\times F$ poljubna točka. Označimo z $z = x_0 y_0$ in naj bo še $\epsilon \in (0,1)\cap F$ poljuben. Naj bo $(z-\epsilon, z+\epsilon)$ okolica točke $z$. Pokažimo, da obstaja tak $\delta > 0$, da je $U = (x_0 - \delta, x_0 + \delta) \times (y_0 - \delta, y_0 + \delta)$ taka okolica točke $(x_0,y_0)$, da je $f|_{U}\subseteq (z-\epsilon, z+ \epsilon)$. Ločimo nekaj primerov. Naj bo najprej $x_0,y_0 > 0$. Izberimo $u,v\in U$ poljubna. Potem velja, da je $uv \ge (x_0 - \delta)(y_0 - \delta) = z - \delta ((x_0 + y_0) - \delta)$ in $uv \le (x_0 + \delta)(y_0 + \delta) = z + \delta((x_0 + y_0) + \delta)$. Videti želimo, da prvi izraz ni manjši od $z- \epsilon$ in da drugi ni večji od $z+\epsilon$.
+ Če je $x_0  + y_0 \ge 1$, potem definiramo $\delta = \frac{\epsilon}{4(x_0 + y_0)} \in F$. Sedaj lahko ocenimo $\delta((x_0 + y_0) -\delta) = \frac{\epsilon}{4(x_0 + y_0)}\big( (x_0 + y_0) - \frac{\epsilon}{4(x_0 + y_0)}\big)  = \frac{\epsilon }{4}(1 - \frac{\epsilon}{4(x_0 + y_0)^2})\le \frac{\epsilon}{4} <  \epsilon $ in 
+$\delta((x_0 + y_0) +\delta) = \frac{\epsilon}{4(x_0 + y_0)}\big( (x_0 + y_0) + \frac{\epsilon}{4(x_0 + y_0)}\big)  = \frac{\epsilon }{4}(1 + \frac{\epsilon}{4(x_0 + y_0)^2})\le \frac{\epsilon}{2} <  \epsilon $. S tem smo dobili željeni oceni za zgornja izraza. Če pa je $x_0 + y_0 < 1$, pa definiramo $\delta = \frac{(x_0 + y_0)\epsilon}{1}\in F$. Podobno kot prej lahko ocenimo $\delta((x_0 + y_0) -\delta) = \frac{\epsilon (x_0 + y_0)}{4}\big( (x_0 + y_0) - \frac{\epsilon (x_0 + y_0)}{4}\big)  = \frac{\epsilon (x_0+y_0)^2}{4}(1 - \frac{\epsilon}{4})\le \frac{\epsilon}{4} <  \epsilon $ in $\delta((x_0 + y_0) +\delta) = \frac{\epsilon (x_0 + y_0)^2}{4}(1 + \frac{\epsilon}{4})  = \frac{\epsilon }{4}(1 +\frac{1}{4})\le \frac{5\epsilon}{16} <  \epsilon $.
+ 
 DOPOLNITI
 
 \begin{flushleft}

@@ -489,7 +489,6 @@ Poglejmo si še primer, ko je vsaj ena izmed koordinat točke enaka 0. Denimo na
 Podobno poiščemo primeren $\delta$  v priemeru, ko je $y_0 = 0$ in $x_0$ poljuben. 
 V vseh primerih torej uspemo okrog izbrane točke $(x_0,y_0)$ najti tako okolico $U$, da je $f(U)$ pod vnaprej predpisano okolico $z = x_0 y_ 0$. Zaključimo, da je tudi produkt zvezna preslikava.
 
-DOPOLNITI
 
 \begin{flushleft}
 7. naloga
@@ -675,9 +674,8 @@ $v(a_n \alpha^n) = v( -(a_{n-1}\alpha^{n-1} + \dots + a_1 \alpha + a_0))\ge \min
 
 \item[(b)] Izberimo si $u\in \Gamma_v$ in $n\in \N$. Vemo, da obstaja $w\in K^*$, da je $v(w) = u$, saj je valuacija surjektivna. Iščemo torej tak $w'\in K^*$, da je $w = (w')^n$. Če je namreč ta pogoj izpolnjen, velja $u = v(w)=  v((w')^n) = nv(w')$ in lahko vzamemo za element $u'$ kar $u'=v(w')$. Poiskati moramo torej le primeren $w'$. Ker je $v(x) = v(-x)$ za poljuben $x\in K^*$, lahko predpostavimo, da je $w > 0$ (sicer ga zamenjamo z $-w$). Ker je $K$ realno zaprt, ima vsak pozitiven element kvadratni koren in vsak polinom lihe stopnje iz $K[x]$ ima v $K$ ničlo. Če je torej $n$ liho število, ima polinom $x^n - w$ ničlo $\alpha \in K$ za katero velja $\alpha^n = u$ in vzamemo lahko $w' = \alpha$. Če pa je $n$ sodo število oblike $n = 2^l k$, kjer je $l\ge 1$ in je $k$ liho število, pa najprej $w$ korenimo $l$-krat in s tem dobimo $w_1$. Če je $ \beta $ ničla polinoma lihe stopnje $x^k - w_1$, potem za $w'$ vzamemo kar $w' = \beta$, saj je $\beta^n = (\beta^k ) ^{2^l}   = w_1^{2^l} = w$. 
 
-\item[(c)]
-
-\end{enumerate}
+\item[(c)] Naj bo $f=x^n + a_{n-1}x^{n-1} + \dots a_1 x  + a_0\in A_v[x] $ in $\overline{f}\in k_v[x]$. Označimo z $\overline{a} \in k_v$ ničlo $\overline{f}$. Tvorimo Sturmovo zaporedje za $f$ v $K$, ki je realno zaprt. Označimo ga s $\{p_i\}_{i=0}^n$. Sturmovo zaporedje za $\overline{f}$ v $k_v[x]$ je potem kar $\{\overline{p}_i\}_{i=0}^n$. Ker ima $\overline{f}$ ničlo in ker je $k_v$ realno zaprt, obstajata dva taka elementa $\overline{\alpha}_1,\overline{\alpha}_2\in k_v$, da je $V(\overline{\alpha}_1) - V(\overline{\alpha}_2) >0$ ($V(b)$ označuje število sprememb predznaka v Sturmovem zaporedju). Ker je polinomov v Sturmovem zaporedju končno in ker ima vsak polinom le končno ničel, lahko $\overline{\alpha}_1,\overline{\alpha}_2$ izberemo tako, da noben izmed polinomov $\overline{p}_i$ nima ničle v $\overline{\alpha}_1, \overline{\alpha}_2$. Poglejmo si sedaj $V(\alpha_1) - V(\alpha_2)$. Ker noben izmed polinomov $\overline{p}_i$ nima ničle v $\overline{\alpha}_1,\overline{\alpha}_2$, tudi polinomi $p_i$ nimajo ničel v $\alpha_1, \alpha_2$. To pomeni, da se predznaki v Sturmovem zaporedju ohranjajo in je zato tudi $V(\alpha_1) - V(\alpha_2)>0$. To pomeni, da ima $f$ ničlo v $K$. Označimo jo z $b$.  Označimo sedaj še z $m = 1+ \sum_{i=0}^{n-1} |a_i| \in A_v$. Vemo, da so vse ničle polinoma $f$ vsebovane v intervalu $[-m,m]$. Ker je urejenost kompatibilna z valuacijo, je $A_v$ urejenostno konveksen. To pomeni, da iz $-m \le b \le m$ sledi, da je tudi $b\in A_v$. S tem smo našli ničlo polinoma $f$, ki leži v $A_v$. Če je $\overline{b} = \overline{a}$, smo končali. Denimo, da temu  ni tako. Potem je $\overline{b}$ neka druga ničla polinoma $\overline{f}$. Zapišemo lahko $\overline{f}(x)  = (x-\overline{b}) \overline{f}_1(x)$. Veljati mora, da je $\overline{a}$ ničla $\overline{f}_1$ in je $\overline{f}_1$ stopnje največ $n-1$. S tem smo problem prevedli na polinome nižje stopnje. Ponovljamo zgornji postopek, dokler ne najdemo ničle $c\in A_v$, za katero velja $\overline{c} = \overline{a}$ ali pa pridemo do linearnih polinomov. Denimo namreč, da imamo linearni polinom $a-a_0 \in A_v[x]$ in da je $\overline{a}$ ničla $x- \overline{a}_0$. Potem je $a_0 \in A_v$ očitno ničla $x-a_0$ in $\overline{a} = \overline{a}_0$. Za linearne polinome trditev očitno velja in zato velja tudi za polinome poljubne stopnje.
+\end{enumerate} 
 
 \begin{flushleft}
 10. naloga
